@@ -21,7 +21,6 @@ class GomiSettingScreen extends React.Component {
           <SettingEmptyItem />
           <SettingItem />
         </View>
-        <Bottombar />
       </View>
     );
   }
@@ -31,6 +30,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: '100%',
+    backgroundColor: '#fff',
   },
   settingItem: {
     width: '100%',

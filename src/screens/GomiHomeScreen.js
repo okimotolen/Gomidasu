@@ -12,9 +12,8 @@ class GomiHomeScreen extends React.Component {
         <Appbar />
         <View style={styles.gomilist}>
           <GomiList />
-          <GomiList color="blue"/>
+          <GomiList color="blue" />
         </View>
-        <Bottombar />
       </View>
     );
   }
@@ -24,6 +23,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: '100%',
+    backgroundColor: '#fff',
   },
   gomilist: {
     width: '100%',

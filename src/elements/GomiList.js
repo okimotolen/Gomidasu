@@ -3,17 +3,13 @@ import { StyleSheet, Text, View } from 'react-native';
 
 class GomiList extends React.Component {
   render() {
-
-const {style, color} = this.props;
-
+const { style, color } = this.props;
     let bgColor = '#FF1C1C';
     let bdColor = '#FF1C1C';
-
     if (color === 'blue') {
       bgColor = '#1546DD';
       bdColor = '#1546DD';
     }
-
     return (
       <View style={styles.gomiList}>
         <View style={[styles.gomiListItem, style,

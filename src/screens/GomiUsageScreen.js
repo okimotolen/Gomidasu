@@ -15,7 +15,6 @@ class GomiUsageScreen extends React.Component {
           <UsageItem>ごみの種類ごとに、通知の設定ができます。</UsageItem>
           <UsageItem>リマインダー機能で繰り返し通知を設定することも可能です！</UsageItem>
         </View>
-        <Bottombar />
       </View>
     );
   }
@@ -25,6 +24,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: '100%',
+    backgroundColor: '#fff',
   },
   UsageItem: {
     width: '100%',

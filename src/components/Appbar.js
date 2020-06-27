@@ -20,12 +20,12 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     height: 90,
-    paddingTop: 30,
     backgroundColor: '#3D66AA',
     justifyContent: 'center',
     alignItems: 'center',
   },
   appbarTitle: {
+    paddingTop: 35,
     color: '#fff',
     fontSize: 24,
   },

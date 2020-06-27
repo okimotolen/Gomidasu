@@ -3,13 +3,33 @@ import { StyleSheet, Text, View } from 'react-native';
 
 class GomiList extends React.Component {
   render() {
+
+const {style, color} = this.props;
+
+    let bgColor = '#FF1C1C';
+    let bdColor = '#FF1C1C';
+
+    if (color === 'blue') {
+      bgColor = '#1546DD';
+      bdColor = '#1546DD';
+    }
+
     return (
       <View style={styles.gomiList}>
-        <View style={styles.gomiListItem}>
-          <View style={styles.gomiListType}>
-            <Text style={styles.gomiListTitle}>燃えるごみ</Text>
+        <View style={[styles.gomiListItem, style,
+          { borderColor: bdColor }]}
+        >
+          { this.props.children }
+          <View style={[styles.gomiListType, style,
+            { backgroundColor: bgColor, borderColor: bdColor }]}
+          >
+            { this.props.children }
+            <Text style={styles.gomiListTitle}>燃えないごみ</Text>
           </View>
-          <View style={styles.gomiDay}>
+          <View style={[styles.gomiDay, style,
+            { backgroundColor: bgColor }]}
+          >
+            { this.props.children }
             <Text style={styles.gomiDayTitle}>火</Text>
           </View>
           <View style={styles.gomiDate}>
@@ -46,7 +66,6 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     padding: 16,
-    backgroundColor: '#FF1C1C',
     height: 50,
     borderColor: '#FF1C1C',
     borderTopWidth: 0,

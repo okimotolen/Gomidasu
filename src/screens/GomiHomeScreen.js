@@ -12,7 +12,7 @@ class GomiHomeScreen extends React.Component {
         <Appbar />
         <View style={styles.gomilist}>
           <GomiList />
-          <GomiList />
+          <GomiList color="blue"/>
         </View>
         <Bottombar />
       </View>

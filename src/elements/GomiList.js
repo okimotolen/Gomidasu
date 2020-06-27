@@ -5,27 +5,11 @@ class GomiList extends React.Component {
   render() {
     return (
       <View style={styles.gomiList}>
-        <View style={styles.gomiListItem1}>
-          <View style={styles.gomiListType1}>
+        <View style={styles.gomiListItem}>
+          <View style={styles.gomiListType}>
             <Text style={styles.gomiListTitle}>燃えるごみ</Text>
           </View>
-          <View style={styles.gomiDay1}>
-            <Text style={styles.gomiDayTitle}>火</Text>
-          </View>
-          <View style={styles.gomiDate}>
-            <Text style={styles.gomiDateTitle}>次の収集日</Text>
-            <Text style={styles.gomiDateTitle}>6/23</Text>
-          </View>
-        </View>
-        <View>
-          <Text> </Text>
-          <Text> </Text>
-        </View>
-        <View style={styles.gomiListItem2}>
-          <View style={styles.gomiListType2}>
-            <Text style={styles.gomiListTitle}>燃えるごみ</Text>
-          </View>
-          <View style={styles.gomiDay2}>
+          <View style={styles.gomiDay}>
             <Text style={styles.gomiDayTitle}>火</Text>
           </View>
           <View style={styles.gomiDate}>
@@ -40,11 +24,10 @@ class GomiList extends React.Component {
 
 const styles = StyleSheet.create({
   gomiList: {
-    flex: 1,
-    top: 50,
     width: '80%',
+    marginBottom: 30,
   },
-  gomiListItem1: {
+  gomiListItem: {
     top: 0,
     left: 0,
     right: 0,
@@ -58,21 +41,7 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 15,
     borderBottomLeftRadius: 15,
   },
-  gomiListItem2: {
-    top: 0,
-    left: 0,
-    right: 0,
-    borderColor: '#1546DD',
-    height: 140,
-    borderBottomWidth: 2,
-    borderLeftWidth: 2,
-    borderRightWidth: 2,
-    borderTopRightRadius: 15,
-    borderTopLeftRadius: 15,
-    borderBottomRightRadius: 15,
-    borderBottomLeftRadius: 15,
-  },
-  gomiListType1: {
+  gomiListType: {
     top: 0,
     left: 0,
     right: 0,
@@ -80,22 +49,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#FF1C1C',
     height: 50,
     borderColor: '#FF1C1C',
-    borderTopWidth: 0,
-    borderLeftWidth: 4,
-    borderRightWidth: 4,
-    borderTopRightRadius: 15,
-    borderTopLeftRadius: 15,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  gomiListType2: {
-    top: 0,
-    left: 0,
-    right: 0,
-    padding: 16,
-    backgroundColor: '#1546DD',
-    height: 50,
-    borderColor: '#1546DD',
     borderTopWidth: 0,
     borderLeftWidth: 4,
     borderRightWidth: 4,
@@ -108,7 +61,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 22,
   },
-  gomiDay1: {
+  gomiDay: {
     position: 'absolute',
     padding: 5,
     top: 68,
@@ -116,18 +69,6 @@ const styles = StyleSheet.create({
     height: 56,
     width: 56,
     backgroundColor: '#FF1C1C',
-    borderRadius: 28,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  gomiDay2: {
-    position: 'absolute',
-    padding: 5,
-    top: 68,
-    left: 70,
-    height: 56,
-    width: 56,
-    backgroundColor: '#1546DD',
     borderRadius: 28,
     justifyContent: 'center',
     alignItems: 'center',

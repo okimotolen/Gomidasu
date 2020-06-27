@@ -1,19 +1,13 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import GomiList from './src/components/GomiList';
-import Appbar from './src/components/Appbar';
-import Bottombar from './src/components/Bottombar';
+import GomiHomeScreen from './src/screens/GomiHomeScreen';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-
-        <Appbar />
-        <GomiList />
-        <Bottombar />
-
+        <GomiHomeScreen />
       </View>
     );
   }

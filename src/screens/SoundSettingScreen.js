@@ -10,17 +10,16 @@ class SoundSettingScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Appbar />
+        <Appbar>通知音</Appbar>
         <View style={styles.SettingItem}>
-          <SettingItem />
-          <SettingItem />
-          <SettingCheckedItem />
-          <SettingItem />
-          <SettingItem />
-          <SettingItem />
-          <SettingItem />
+          <SettingItem>レーダー</SettingItem>
+          <SettingItem>アップリフト</SettingItem>
+          <SettingItem>オープニング</SettingItem>
+          <SettingCheckedItem>きらめき</SettingCheckedItem>
+          <SettingItem>サーキット</SettingItem>
+          <SettingItem>さざ波</SettingItem>
+          <SettingItem>サミット</SettingItem>
         </View>
-        <Bottombar />
       </View>
     );
   }

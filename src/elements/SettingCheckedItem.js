@@ -6,7 +6,9 @@ class SettingItem extends React.Component {
     return (
       <View style={styles.settingItem}>
         <View>
-          <Text style={styles.settingItemTitle}>お知らせ</Text>
+          <Text style={styles.settingItemTitle}>
+            { this.props.children }
+          </Text>
         </View>
         <View style={styles.checkMark}>
           <Text>✔︎</Text>

@@ -10,12 +10,12 @@ class GomiSettingScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Appbar />
+        <Appbar>設定</Appbar>
         <View style={styles.settingItem}>
           <SettingItem>お知らせ</SettingItem>
           <SettingEmptyItem />
           <SettingEmptyItem />
-          <TouchableHighlight onPress={() => {}}>
+          <TouchableHighlight onPress={() => {}} style={{ width: '100%' }}>
             <SettingItem>通知音の設定</SettingItem>
           </TouchableHighlight>
           <SettingItem>通知するごみの設定</SettingItem>

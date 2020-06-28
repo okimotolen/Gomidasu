@@ -9,7 +9,7 @@ class GomiHomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Appbar />
+        <Appbar>ホーム</Appbar>
         <View style={styles.gomilist}>
           <GomiList />
           <GomiList color="blue" />

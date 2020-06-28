@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, TouchableHighlight } from 'react-native';
 
 import Appbar from '../components/Appbar';
 import Bottombar from '../components/Bottombar';
@@ -10,15 +10,16 @@ class ReminderSettingScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Appbar />
+        <Appbar>通知設定</Appbar>
         <View style={styles.SettingItem}>
-          <SettingItem />
-          <SettingCheckedItem />
-          <SettingCheckedItem />
-          <SettingItem />
-          <SettingItem />
+          <TouchableHighlight onPress={() => {}} style={{ width: '100%' }}>
+            <SettingCheckedItem>燃えるごみ</SettingCheckedItem>
+          </TouchableHighlight>
+          <SettingCheckedItem>容器包装プラスチック</SettingCheckedItem>
+          <SettingItem>缶・金属類</SettingItem>
+          <SettingItem>ビン類</SettingItem>
+          <SettingItem>埋め立てごみ</SettingItem>
         </View>
-        <Bottombar />
       </View>
     );
   }

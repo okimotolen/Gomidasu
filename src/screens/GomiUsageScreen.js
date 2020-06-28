@@ -9,7 +9,7 @@ class GomiUsageScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Appbar />
+        <Appbar>使い方</Appbar>
         <View style={styles.UsageItem}>
           <UsageItem>カレンダーから今月のごみ出し日を確認することができます。</UsageItem>
           <UsageItem>ごみの種類ごとに、通知の設定ができます。</UsageItem>

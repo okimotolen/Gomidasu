@@ -6,7 +6,9 @@ class Appbar extends React.Component {
     return (
       <View style={styles.appbar}>
         <View>
-          <Text style={styles.appbarTitle}>ホーム</Text>
+          <Text style={styles.appbarTitle}>
+            { this.props.children }
+          </Text>
         </View>
       </View>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, TouchableHighlight } from 'react-native';
 
 import Appbar from '../components/Appbar';
 import Bottombar from '../components/Bottombar';
@@ -12,14 +12,16 @@ class GomiSettingScreen extends React.Component {
       <View style={styles.container}>
         <Appbar />
         <View style={styles.settingItem}>
-          <SettingItem />
+          <SettingItem>お知らせ</SettingItem>
           <SettingEmptyItem />
           <SettingEmptyItem />
-          <SettingItem />
-          <SettingItem />
+          <TouchableHighlight onPress={() => {}}>
+            <SettingItem>通知音の設定</SettingItem>
+          </TouchableHighlight>
+          <SettingItem>通知するごみの設定</SettingItem>
           <SettingEmptyItem />
           <SettingEmptyItem />
-          <SettingItem />
+          <SettingItem>家族や友だちに教える</SettingItem>
         </View>
       </View>
     );
